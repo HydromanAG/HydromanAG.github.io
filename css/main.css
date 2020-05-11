@@ -4,6 +4,7 @@ body {
     background-image: url(../Images/Website_Background.jpg);
     background-color: #cccccc;
     background-repeat: no-repeat;
+    background-size: auto;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
