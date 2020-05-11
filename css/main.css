@@ -5,7 +5,7 @@ body {
     background-color: #cccccc;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
