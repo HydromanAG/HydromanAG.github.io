@@ -14,27 +14,22 @@ body {
     background-color: black;
     color: white;
 }
-nav ul {
-    padding: 10px;
-    list-style: none;
-    font-weight: bold;
+nav {
+    margin-top: 1%;
+    margin-right: 6%;
     font-size: 1.3em;
+    white-space: nowrap;
+    float: right;
+    font-weight: lighter;
 }
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-    color: grey;
-
+#Nav a{
+    color: white;     
+    text-decoration:none;
+    font-family: 'nimbus-sans',sans-serif;
+    padding: 3%;
 }
-a {
-    text-decoration: none;
-    color:black;
-
-}
-a:hover {
+#Nav a:hover {
     text-decoration: underline;
-
 }
 h6{
 
@@ -68,16 +63,4 @@ p {
     margin:0px; 
     font-variant: small-caps;
 
-}
-
-
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 2em;
-    color:white;
-}
-
-ul.posts li {
-    list-style: none;
-    color:white;
 }
