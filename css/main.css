@@ -19,15 +19,12 @@ nav ul {
     list-style: none;
     font-weight: bold;
     font-size: 1.3em;
-            background-color: white;
-
-
 }
 
 nav ul li {
     display: inline;
     margin-right: 20px;
-        color: black;
+    color: grey;
 
 }
 a {
