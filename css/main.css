@@ -1,24 +1,76 @@
+* {
+  box-sizing: border-box;
+  padding:0;
+}
 @media screen and (max-width: 600px) {
   #Nav a.icon {
     display: inline;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
   .initial a{display: none;}
   .initial.Display a{display: block;}
+  .intro_image, .intro_msg {
+    float:none;
+    width:100%;
+  }
+  .intro_image {
+    text-align: center;
+  }
+  .intro_msg h2{
+    margin: 0
+  }
 }
 @media screen and (min-width: 601px) {
 #Nav a.icon{ display: none;}
+    .intro_image, .intro_msg {
+      float:left;
+      display:block
+    }
+    .intro_image{
+        width:40%;
+    }
+    .intro_msg{
+        width: 60%
+    }
 }
+.intro{
+    width: 100%;
+    padding-top: 10%;
+    overflow: auto;
+}
+.intro_image {
+  padding-bottom:2%;
+  position:relative;
+}
+.image {
+    width:100%;
+    height:auto;
+    border-radius: 50%; 
+    border: 2px solid grey;
+        }
+.intro_msg {
+  text-align:center;
+  padding:5%;
+}
+.intro_msg h1{
+    font-size: 4em;
+    font-family: 'nimbus-sans',sans-serif;
+    font-weight: lighter;
+    margin: 0;
+}
+.intro_msg h2{
+    font-size: 2em;
+    font-family: 'nimbus-sans',sans-serif;
+    font-weight: lighter;
+}
+.intro_msg h3{
+    font-size: 1.4em;
+    font-family: 'nimbus-sans',sans-serif;
+            font-weight: lighter;
 
-#demo{
-    position: absolute;
-    bottom: 0px;
-    left: 5%;
-    z-index: 1;
-    padding: 0px;
-    margin: 0px;
-    height:85%;
-    width:35%;
-}
+    }
 body {
     margin: 10px auto;
     width: 95%;
@@ -41,37 +93,4 @@ nav {
     white-space: nowrap;
     float: right;
     font-weight: lighter;
-}
-h6{
-
-    font-family: cursive, sans-serif;    
-    font-size: 2em;
-    text-align: center;
-    padding:0px;
-    margin:0px;
-}
-h1 {
-        font-size: 4em;
-        font-family: sans-serif;
-        font-variant: small-caps;
-padding:0px;
-    margin:0px;    
-    text-align: center;
-}
-
-.container{
-
-    position: absolute;
-    left:40%;
-    bottom:35%;
-    text-align: center;
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-        color: white;
-        padding:0px;
-    margin:0px; 
-    font-variant: small-caps;
-
 }
