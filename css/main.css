@@ -1,3 +1,14 @@
+@media screen and (max-width: 600px) {
+  #Nav a.icon {
+    display: inline;
+  }
+  .initial a{display: none;}
+  .initial.Display a{display: block;}
+}
+@media screen and (min-width: 601px) {
+#Nav a.icon{ display: none;}
+}
+
 #demo{
     position: absolute;
     bottom: 0px;
@@ -14,13 +25,8 @@ body {
     background-color: black;
     color: white;
 }
-nav {
-    margin-top: 1%;
-    margin-right: 6%;
-    font-size: 1.3em;
-    white-space: nowrap;
-    float: right;
-    font-weight: lighter;
+#Nav a:hover {
+    text-decoration: underline;
 }
 #Nav a{
     color: white;     
@@ -28,8 +34,13 @@ nav {
     font-family: 'nimbus-sans',sans-serif;
     padding: 3%;
 }
-#Nav a:hover {
-    text-decoration: underline;
+nav {
+    margin-top: 1%;
+    margin-right: 6%;
+    font-size: 1.3em;
+    white-space: nowrap;
+    float: right;
+    font-weight: lighter;
 }
 h6{
 

@@ -5,17 +5,23 @@
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+		<script src="https://kit.fontawesome.com/f8a5c5fcc0.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
-		<nav id = "Nav">
-			<a href="/">HOME</a>
-			<a href="/about">ABOUT</a>
-			<a href="/cv">CV</a>
-			<a href="/blog">BLOG</a>
-			<a href="/contact">CONTACT</a>
+		<nav class = "topnav" id = "Nav">
+			<a href = "javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fas fa-align-justify"></i>
+			</a>
+			<div class = "initial" id="myLinks">
+				<a href="/">HOME</a>
+				<a href="/about">ABOUT</a>
+				<a href="/cv">CV</a>
+				<a href="/blog">BLOG</a>
+				<a href="/contact">CONTACT</a>
+			</div>
 		</nav>
 		<img src="Images/Me_Bottle_House_Sanu_Specs_by_abhi.png" id="demo"> 
-		<div class="container">
+		<!-- <div class="container">
     		<div class="blurb">
         		<h6>Hi there, I'm</h6>
         		<h1>Ayush Garg !</h1>
@@ -23,8 +29,22 @@
         			A focussed and highly ambitious individual, who aims to revolutionalise the software industry, through the integration of mathematics and Computer Science.
         			I like servers! <br> 'The one who can harness the power of APIs, can rule the world'.
         		</p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		
+    		</div><
+		</div>
+	 -->		
+	 <script>
+	function myFunction() {
+	  var x = document.getElementById("myLinks");
+	  console.log(x)
+	  console.log(x.className)
+	  if(x.className === "initial")
+	  {
+	  	x.className += " Display"
+	  }
+	  else {
+	    x.className = "initial";
+	  }
+	}
+	</script>
 	</body>
 </html>
