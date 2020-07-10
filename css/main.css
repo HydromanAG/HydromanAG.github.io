@@ -11,36 +11,51 @@
   }
   .initial a{display: none;}
   .initial.Display a{display: block;}
-  .intro_image, .intro_msg {
+  .intro_image, .intro_msg, #left, #right {
     float:none;
     width:100%;
   }
-  .intro_image {
+  #right{
+    margin-bottom: 2%;
+  }
+  .intro_image, #left {
     text-align: center;
   }
-  .intro_msg h2{
+  .intro_msg, #right h2{
     margin: 0
   }
 }
 @media screen and (min-width: 601px) {
 #Nav a.icon{ display: none;}
-    .intro_image, .intro_msg {
+    .intro_image, .intro_msg, #left, #right {
       float:left;
       display:block
     }
     .intro_image{
         width:40%;
     }
+    #left
+    {
+        width: 50%;
+    }
     .intro_msg{
-        width: 60%
+        width: 60%;
+    }
+    #right{
+        width: 50%;
     }
 }
 .intro{
     width: 100%;
     padding-top: 10%;
     overflow: auto;
+    padding-bottom: 1px;
 }
-.intro_image {
+#about{
+    width: 100%;
+    padding-bottom: 1px;
+}
+.intro_image{
   padding-bottom:2%;
   position:relative;
 }
@@ -48,17 +63,43 @@
     width:100%;
     height:auto;
     border-radius: 50%; 
-    border: 2px solid grey;
+    border: 2px solid turquoise;
         }
-.intro_msg {
+.intro_msg, #left {
   text-align:center;
   padding:5%;
 }
+#left{
+    background-color: turquoise;
+    border: 2px solid grey;
+    border-radius: 8%;
+    height: 100%;
+}
+#about{
+    margin-top: 2%;
+    overflow: auto;
+}
+#left h2{
+    font-size: 2em;
+    font-family: 'Barlow Thin',sans-serif;
+    margin: 0;
+    color: black;
+    font-weight: lighter;
+}
 .intro_msg h1{
     font-size: 4em;
-    font-family: 'nimbus-sans',sans-serif;
-    font-weight: lighter;
+    font-family: 'Bungee Shade',sans-serif;
     margin: 0;
+    color: turquoise;
+}
+#right h2{
+    font-size: 1.5em;
+    font-family: 'Aleo',sans-serif;
+    margin: 0;
+    color: grey;
+        font-weight: lighter;
+    padding-left:1%;
+
 }
 .intro_msg h2{
     font-size: 2em;
@@ -71,6 +112,9 @@
             font-weight: lighter;
 
     }
+#about{
+    margin-bottom: 5%;
+}
 body {
     margin: 10px auto;
     width: 95%;
@@ -79,6 +123,7 @@ body {
 }
 #Nav a:hover {
     text-decoration: underline;
+    color: turquoise;
 }
 #Nav a{
     color: white;     
