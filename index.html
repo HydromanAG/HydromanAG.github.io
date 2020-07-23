@@ -3,15 +3,26 @@
 	<head>
 		<title>Ayush Garg</title>
 		<!-- link to main stylesheet -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">		<link href='https://fonts.googleapis.com/css?family=Bungee Shade' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Aleo' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Barlow Thin' rel='stylesheet'>
 
+
 		<meta name="viewport" content="width=device-width, initial-scale=1" /> 
 		<script src="https://kit.fontawesome.com/f8a5c5fcc0.js" crossorigin="anonymous"></script>
 	</head>
-	<body>
+	<div class="container" id = "container">
+		<div class="row text-center">
+		<div class = "centered">
+		<div class = "blob-1" ></div>
+		<div class = "blob-2"></div>
+	</div>
+		</div>
+	</div>
+	<body onload="myFunction1()">
+		<div id="page">
 		<nav class = "topnav" id = "Nav">
 			<a href = "javascript:void(0);" class="icon" onclick="myFunction()">
 				<i class="fas fa-align-justify"></i>
@@ -42,6 +53,7 @@
 				<h2>Born and brought up in Delhi, I am currently pursuing a B.tech in Mathematics and Computing at IIT Delhi. My interests lie in the domain of Mathematics and Computer Science. I'm interested in pure math as well as applied math. Besides that, I love learning new languages, programming or spoken! </h2>
 			</div>
 		</div>
+	</div>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script>
         AOS.init();
@@ -60,5 +72,18 @@
 	  }
 	}
 	</script>
+	<script>
+		var myVar;
+		
+		function myFunction1() {
+		  myVar = setTimeout(showPage, 3000);
+		  console.log('hehe')
+		}
+		
+		function showPage() {
+		  document.getElementById("container").style.display = "none";
+		  document.getElementById("page").style.display = "block";
+		}
+		</script>
 	</body>
 </html>
